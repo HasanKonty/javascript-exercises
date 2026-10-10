@@ -1,24 +1,16 @@
 const repeatString = function(str , num) {
 
+  if (num<0) 
+    return "ERROR";
+
     let stringArr=[];
 
     for ( let i=0; i<num; i++) {
         
         stringArr.push(str);
+                 
     }
-    if (num<0) {
-        return "ERROR";
+    return stringArr.join("");
     }
-    else{
-    return stringArr
-
-    .join("");
-     
-    }
-    }
-
-  repeatString("hey" , 3)
-
-
 // Do not edit below this line
 module.exports = repeatString;
