@@ -1,11 +1,11 @@
 const sumAll = function (a, b) {
-   
-    if (a < 0 || b < 0 || Math.floor(a) !== a ||
-        Math.floor(b) !== b || typeof b !== "number" ||
-        typeof a !== "number") {
+
+    if (typeof b !== "number" || typeof a !== "number" ||
+        a < 0 || b < 0 ||
+        Math.floor(a) !== a || Math.floor(b) !== b) {
         return "ERROR"
     }
- const start = Math.min(a, b);
+    const start = Math.min(a, b);
     const end = Math.max(a, b);
 
     let integers = [];
